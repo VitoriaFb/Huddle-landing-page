@@ -1,0 +1,35 @@
+body{
+  font-family: "Open Sans", serif;
+  font-weight: 400;
+  background: url(../images/bg-desktop.svg) center center no-repeat;
+  background-color: hsl(257, 40%, 49%);
+}
+
+.header{
+  display: flex;
+  padding: 40px 65px;
+  margin: 11px;
+  align-items: center;
+}
+
+.header img{
+  height: 52px;
+}
+
+.main{
+  display: flex;
+  align-items: center;
+}
+
+.main .text img{
+  height: 60%;
+  padding: 30px 70px;
+  margin: 10px;
+}
+
+.main .text h2{
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  color: #fff;
+}
