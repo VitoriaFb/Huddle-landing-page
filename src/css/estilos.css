@@ -1,19 +1,19 @@
 body{
   font-weight: 400;
-  background: url(../images/bg-desktop.svg) no-repeat;
+  background: url(../images/bg-desktop.svg)   no-repeat ;
   background-color: hsl(257, 40%, 49%);
+  height: 89vh;
 }
 
 .header{
+  
   padding: 25px 35px;
-  margin: 11px;
+  margin: 20px;
   align-items: center;
-  background-color: aqua;
-  /* min-height: 50%; */
 }
 
 .header .logo{
- 
+  height: 58px;
 }
 
 .main{
@@ -21,6 +21,7 @@ body{
   flex-direction: row;
   align-items: center;
   align-content: center;
+  padding: 50px;
 }
 
 .image{
@@ -72,16 +73,18 @@ body{
 }
 
 .social{
-  display: flex;
-  justify-content: end;
+  Display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
   font-size: 35px;
-  padding: 0 10vh;
-
+  
 }
 
 .social a{
   margin: 20px;
   transition: 0.3s;
+  
 }
 
 .social a:hover{
