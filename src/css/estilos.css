@@ -1,19 +1,23 @@
 body{
-  font-weight: 400;
-  background: url(../images/bg-desktop.svg)   no-repeat ;
+  height: 100vh;
+  margin: 0;
+  background: url(../images/bg-desktop.svg) no-repeat center;
+  background-size: cover;
   background-color: hsl(257, 40%, 49%);
-  height: 89vh;
+  
 }
 
 .header{
-  
   padding: 25px 35px;
   margin: 20px;
   align-items: center;
 }
 
 .header .logo{
-  height: 58px;
+  position: relative;
+  left: 10px;
+  top: 9px;
+  height: 56px;
 }
 
 .main{
@@ -21,13 +25,18 @@ body{
   flex-direction: row;
   align-items: center;
   align-content: center;
-  padding: 50px;
+  min-width: 320px;
+  max-width: 1500px;
 }
 
-.image{
-  padding: 20px 0 0 35px;
-  margin: 30px; 
+.image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+  padding: 69px;
 }
+
  
 
 .item{
@@ -39,7 +48,7 @@ body{
   margin-bottom: 75px;
 }
 
-.item h2{
+.titulo{
   padding: 12px;
   font-size: 40px;
   font-weight: 700;
@@ -49,12 +58,13 @@ body{
 
 }
 
-.item p{
+.texto{
   justify-content: flex-start; 
   padding: 16px;
   line-height: 30px;
   font-size: 20px;
   font-weight: 300;
+  max-width: 600px;
 }
 
 .btn-register{
@@ -63,8 +73,8 @@ body{
   font-size: 20px;
   padding: 15px 60px;
   border-radius: 30px;
-  margin: 10px;
-  transition: 0.3s
+  margin: 50px;
+  transition: all 0.3s ease-in-out;
 } 
  
 .item .btn-register:hover {
@@ -72,18 +82,19 @@ body{
  box-shadow: 0 5px 15px hsl(0, 0%, 22%);
 }
 
-.social{
-  Display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-end;
-  font-size: 35px;
-  
+footer {
+  display: flex;
+  flex-direction: column;
+  text-align: end;  
 }
 
 .social a{
-  margin: 20px;
+  margin: 10px;
   transition: 0.3s;
+  border: 2px solid;
+  padding: 10px;
+  border-radius: 100%;
+  font-size: 18px;
   
 }
 
